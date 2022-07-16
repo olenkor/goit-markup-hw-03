@@ -205,18 +205,36 @@ img{
 
  /* Benefits */
 
- .benefits-title{
-    line-height: 1.14;
+ .benefits-list{
+    display: flex;
+    flex-wrap: no-wrap;
+    gap: 30px;
  }
 
- .benefits-text{
+ .benefits-item{
+    flex-basis: calc((100% - 90px) / 4);
+ }
+
+ .benefits-title{
+    line-height: 1.14;
+    margin-bottom: 10px;
+ }
+
+
+ .benefits-text {
     line-height: 1.71;
     color: var(--secondary-text-color);
  }
 
 .section-title{
+    
     font-size: 36px;
     line-height: 1.16;
+
+}
+
+.none{
+    display: none;
 }
 
 /*Team*/
@@ -307,6 +325,9 @@ img{
    color: var(--light-text-color);
    text-decoration: none;
    
+}
+.address{
+    font-style: normal;
 }
 
 
