@@ -361,17 +361,23 @@ img{
 /*footer*/
 
 .footer{
-   background-color: var(--secondary-bg-color)
+   background-color: var(--secondary-bg-color);
+   padding-top: 60px;
+   padding-bottom: 60px;
+
 
 }
 
-.footer > .logo{
+.footer .logo{
+    display: block;
     color: var(--light-text-color);
-
+    margin-bottom: 20px;
+ 
 }
 
-/* .footer >.logo:hover*{
-    color: var(--accent-color);}*/
+.footer>link{
+    margin-bottom: 9px;
+}
 
 
 .map{
@@ -380,6 +386,11 @@ img{
    color: var(--light-text-color);
    text-decoration: none;
    
+   
+}
+
+.footer-item:not(:last-child){
+    margin-bottom: 9px;
 }
 .address{
     font-style: normal;
