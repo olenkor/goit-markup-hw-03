@@ -77,8 +77,8 @@ img{
 /*header*/
 
 .header{
-    padding-top: 25px;
-    padding-bottom: 25px ;
+   
+    border: 1px solid #ECECEC
 }
 
 .page-header-container{
@@ -94,6 +94,7 @@ img{
 
 .nav-list{
     display: flex;
+    
 }
 
 .list-item:not(:last-child) {
@@ -112,12 +113,16 @@ img{
 }
 
 .nav-link{
+    display: block;
     color: var(--primary-text-color);
     list-style: none;
     text-decoration: none;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    padding-top: 31px;
+    padding-bottom: 31px;
+   
 }
 
 .footer-contacts{
@@ -137,12 +142,15 @@ img{
 }
 
 .contacts-link{
+    display: block;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     list-style:none;
     text-decoration: none;
+    padding-top: 31px;
+    padding-bottom: 31px;
 }
 
 .contacts-link:hover,
@@ -172,6 +180,7 @@ img{
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 696px;
 
     margin-bottom: 30px;
     
@@ -213,6 +222,7 @@ img{
 
  .benefits-item{
     flex-basis: calc((100% - 90px) / 4);
+
  }
 
  .benefits-title{
@@ -252,8 +262,9 @@ img{
 
 .work-list{
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     gap: 30px;
+
 }
 
 .work-item {
@@ -269,7 +280,7 @@ img{
 
 .team-list{
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -282,7 +293,12 @@ img{
 }
 
 .team-image{
-    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.team-description{
+    padding: 30px 59px;
 }
 
 .team-subtitle{
@@ -309,13 +325,71 @@ img{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 30px;
 
 }
 
 
 
 /*Portfolio hero*/
+
+.portfolio-title{
+    display: none;
+}
+
+.filter-list{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.filter-item{
+    margin-right: 8px;
+
+}
+
+.filter-item:last-child{
+    margin-right: 0px;
+
+}
+
+
+.portfolio-list{ 
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-item {
+    flex-basis: calc((100% - 60px) / 3);
+ 
+     
+}
+
+.portfolio-item:nth-child(3n){
+    margin-right: 0px;
+}
+
+.portfolio-item:nth-last-child(-n+3){
+    margin-bottom: 0px;
+}
+
+
+.portfolio-image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-description{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0px;
+    
+}
 
 .button{
     font-family: inherit;
@@ -325,7 +399,11 @@ img{
     cursor: pointer;
     background-color: var(--accent-bg-color);
     border-radius: 4px;
-    border-color: var(--primary-bg-color);
+    border-color: var(--accent-bg-color);
+    border: 0px;
+
+    padding: 6px 22px;
+    min-width: 73px;
 
 }
 .button:hover {
@@ -341,6 +419,7 @@ img{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 
 }
 
@@ -355,6 +434,7 @@ img{
    color: var(--light-text-color);
    border: 1px solid var(--accent-color);
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  
 
 }
 
